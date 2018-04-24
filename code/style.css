@@ -1,0 +1,77 @@
+
+
+.loanz-apply-widget {
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 100%;
+  padding: 0.6em 2.8em;
+  color: #fff;
+  border: none rgba(0, 0, 0, 0);
+  background-color: #4d92df;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.loanz-apply-widget:hover,
+.loanz-apply-widget:focus {
+  background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+
+.loanz-apply-widget:focus {
+  outline: 0;
+}
+
+.loanz-apply-widget:active {
+  box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+  border-color: #000;
+}
+
+.lnz-modal {
+  display: flex;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  padding: 60px 20px 20px;
+  background: rgba(0,0,0, .6);
+  z-index: 10;
+}
+
+.lnz-modal_hidden {
+  display: none;
+}
+
+.lnz-modal__content {
+  overflow: hidden;
+  flex: 1;
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 880px;
+  min-height: 500px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.lnz-modal__close {
+  position: fixed;
+  top: 20px; right: 20px;
+  width: 30px;
+  height: 30px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAXlJREFUaAXtmUEOgjAURI1x7XW8lBdx6208gedx4Ro/xCbQNKW///8hgSFpTGk7M29kQzideLEBNsAG2AAbYANsgA2wATYAa2AYhquMl4wbzPRvJJ53GU+Yr5hdZLxljNdHBgxavEbYdD2Q0HNjCLRQwj0XhSIDIL0WkPkEEQThkXNV55GBIrWrUGuLEcEiNNc4VOueAT21VBDazR5BPTS0uU37LYEtZ02hrYd7gvecseZ0Pa8B0Ox1Dekt1gLSssc7V6heDai2FhoqWrwEVroXnQOqnwF+ZZ4uyMsHFDaZCeH8jWcEhsOeUxj+OjeQ/bv7fqQz2OkxLt1z7ngbuRpYbW2btEbXFqCWPcYYmOMaEM1eTHqlSw9AzxllrJjtluCWszE0K6oegT00VmL6LHsG9dTyoctUIgJGaGax+6aRwSK1u2gRgRAeTfDIIEivIvwWAbbwnODF+JCfS4/zQbz4jPMmG2ADbIANsAE2wAbYABtgA2xgbw38AFdbeaKn92PXAAAAAElFTkSuQmCC') no-repeat;
+  background-size: 30px 30px;
+  opacity: .8;
+  cursor: pointer;
+  z-index: 15;
+  transition: opacity .2s;
+}
+
+.lnz-modal__close:hover {
+  opacity: 1;
+}
