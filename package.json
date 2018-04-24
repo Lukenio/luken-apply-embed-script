@@ -7,7 +7,8 @@
     "start": "serve ./example -p 8080",
     "clean": "node scripts/clean-dist.js",
     "dev": "npm run clean && node scripts/build.js",
-    "build": "npm run dev && node scripts/minify.js"
+    "build": "npm run dev && node scripts/minify.js",
+    "deploy": "aws s3 cp dist/ s3://loanz/embed --recursive --profile my && aws cloudfront create-invalidation --distribution-id E30ZFESIUM20Q5 --paths '/*' --profile my"
   },
   "keywords": [],
   "author": "",
