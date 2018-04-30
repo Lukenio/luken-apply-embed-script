@@ -13,3 +13,10 @@
 Script is written in ES5 to avoid use of transpilers (most likely will increase file size which isn't good).
 
 Also note that you will need to run `build` command every time files changed.
+
+##  example embed code:
+
+```
+<script src="https://app.loanz.io/embed/embed.min.js"></script>
+<a href="https://app.loanz.io/apply-embed/?partner_token=hj43h-4nj33jk-4j3nk3-nk43" class="loanz-apply-widget">Apply</a>
+```
